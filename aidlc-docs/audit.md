@@ -167,3 +167,29 @@
 **Context**: Code Generation Part 1 완료, 사용자 승인 대기
 
 ---
+
+## CONSTRUCTION - Code Generation (백엔드 Task)
+**Timestamp**: 2026-04-15T09:35:00Z
+**User Input**: "나는 백엔드개발자니 백엔드Task만 진행해줘."
+**AI Response**: 백엔드 Task만 진행. Phase 0 (모노레포 기반 + 공유 타입), Phase 1 (Unit 2-A: 9개 ORM 모델, 6개 서비스, Customer API 라우터 4개, PBT 포함 단위 테스트 5개), Phase 2 (Unit 2-B: Admin API 라우터 5개, 미들웨어 2개), Phase 4 (PM2 설정, README). 총 40+ 파일 생성. Frontend Phase 3는 건너뜀.
+**Context**: Code Generation 백엔드 완료, 사용자 승인 대기
+
+---
+
+## CONSTRUCTION - Code Generation TDD 사이클
+**Timestamp**: 2026-04-15T09:40:00Z
+**User Input**: "TDD로 구현해줘" → "TDD사이클부터 진행해"
+**AI Response**: TDD Red-Green 사이클 실행. Red: AuthService.ts의 jwt.sign() 타입 에러 (TS2769 — expiresIn 타입 불일치). Green: SignOptions 타입 캐스팅으로 수정. 전체 5개 테스트 스위트, 16개 테스트 통과 확인.
+**Context**: Code Generation TDD 사이클 완료, 전체 테스트 통과
+
+---
+
+## CONSTRUCTION - Build and Test
+**Timestamp**: 2026-04-15T09:45:00Z
+**Build Status**: 성공
+**Test Status**: 16/16 통과 (5 suites)
+**TDD 사이클**: 3회 Red-Green (jwt.sign 타입, rootDir, declaration)
+**Files Generated**: build-instructions.md, unit-test-instructions.md, integration-test-instructions.md, build-and-test-summary.md
+**Context**: Build and Test 완료
+
+---

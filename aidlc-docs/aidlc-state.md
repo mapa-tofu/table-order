@@ -44,8 +44,8 @@
 - [x] NFR Requirements — COMPLETED (전체 유닛 통합)
 - [ ] NFR Design — SKIP
 - [x] Infrastructure Design — COMPLETED (전체 유닛 통합)
-- [ ] Code Generation — EXECUTE (per-unit)
-- [ ] Build and Test — EXECUTE
+- [x] Code Generation — COMPLETED (백엔드 Task)
+- [ ] Build and Test — COMPLETED
 
 ### OPERATIONS PHASE
 - [ ] Operations — PLACEHOLDER
