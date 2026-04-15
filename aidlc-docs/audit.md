@@ -143,3 +143,27 @@
 **Context**: Functional Design 전체 유닛 완료, NFR Requirements 진행 예정
 
 ---
+
+## CONSTRUCTION - NFR Requirements (전체 유닛 통합)
+**Timestamp**: 2026-04-15T09:26:00Z
+**User Input**: "답변 완료" → 14개 답변 확인 → "확인 완료했어."
+**AI Response**: 전체 3유닛 기능 설계 분석 후 14개 NFR 평가 질문 생성. 답변 분석: Q1:B(5~20매장), Q2:B(아카이빙), Q3:C(합리적수준), Q4:B(비동기업로드), Q5:A(높은가용성), Q6:A(이벤트버퍼링), Q7:A(Sequelize), Q8:B(Zustand), Q9:B(CSS Modules), Q10:B(Jest), Q11:A(winston), Q12:C(ORM기본), Q13:A(ESLint+Prettier), Q14:B(swagger-jsdoc). NFR Requirements 산출물 2개 생성: nfr-requirements.md (7개 카테고리 NFR 정의), tech-stack-decisions.md (기술 스택 확정 + 패키지 목록 + 환경 변수). 사용자 승인 완료.
+**Context**: NFR Requirements 완료, Infrastructure Design 진행 예정
+
+---
+
+## CONSTRUCTION - Infrastructure Design (전체 유닛 통합)
+**Timestamp**: 2026-04-15T09:28:00Z
+**User Input**: "답변 완료" → 10개 답변 확인 → "ㄱㄱㄱ"
+**AI Response**: 10개 답변 분석: Q1:C(EC2+PM2), Q2:C(prod만), Q3:A(단일서버), Q4:B(Express정적서빙), Q5:A(RDS t3.micro), Q6:B(S3퍼블릭), Q7:A(ALB), Q8:B(ALB DNS+ACM), Q9:C(기본CloudWatch), Q10:D(수동배포). Infrastructure Design 산출물 2개 생성: infrastructure-design.md, deployment-architecture.md. 사용자 승인 완료.
+**Context**: Infrastructure Design 완료, Code Generation 진행 예정
+
+---
+
+## CONSTRUCTION - Code Generation Part 1 (계획 생성)
+**Timestamp**: 2026-04-15T09:30:00Z
+**User Input**: (Infrastructure Design 승인 후 자동 진행)
+**AI Response**: Code Generation 계획 생성 완료. 4개 Phase, 32개 Step으로 구성. Phase 0: 프로젝트 기반 (2 steps), Phase 1: Unit 2-A Shared & Customer (17 steps), Phase 2: Unit 2-B Admin (5 steps), Phase 3: Unit 1 Frontend (7 steps), Phase 4: 배포 산출물 (1 step). 9개 사용자 스토리 전체 커버. 사용자 승인 대기.
+**Context**: Code Generation Part 1 완료, 사용자 승인 대기
+
+---

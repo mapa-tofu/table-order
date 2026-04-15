@@ -41,9 +41,9 @@
   - [x] Unit 2-A: Backend Shared & Customer API (Completed)
   - [x] Unit 2-B: Backend Admin API (Completed)
   - [x] Unit 1: Frontend (Completed)
-- [ ] NFR Requirements — EXECUTE (per-unit)
+- [x] NFR Requirements — COMPLETED (전체 유닛 통합)
 - [ ] NFR Design — SKIP
-- [ ] Infrastructure Design — EXECUTE (per-unit)
+- [x] Infrastructure Design — COMPLETED (전체 유닛 통합)
 - [ ] Code Generation — EXECUTE (per-unit)
 - [ ] Build and Test — EXECUTE
 
