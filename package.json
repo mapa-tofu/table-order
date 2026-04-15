@@ -1,0 +1,33 @@
+{
+  "name": "table-order",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "shared"
+  ],
+  "scripts": {
+    "build": "npm run build:server",
+    "build:server": "npm run --workspace=server build",
+    "build:client": "npm run --workspace=client build",
+    "start": "node server/dist/index.js",
+    "start:pm2": "pm2 start ecosystem.config.js",
+    "dev": "npm run --workspace=server dev",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "test": "npm run --workspace=server test",
+    "test:server": "npm run --workspace=server test",
+    "db:migrate": "npm run --workspace=server db:migrate",
+    "db:seed": "npm run --workspace=server db:seed"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.4.0"
+  }
+}

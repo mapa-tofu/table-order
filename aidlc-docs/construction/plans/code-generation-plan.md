@@ -32,23 +32,23 @@
 
 ### Phase 0: 프로젝트 기반 설정
 
-- [ ] **Step 1**: 모노레포 루트 설정
+- [x] **Step 1**: 모노레포 루트 설정
   - `table-order/package.json` (workspaces, scripts)
   - `table-order/tsconfig.base.json` (공유 TypeScript 설정)
   - `table-order/.eslintrc.json`, `table-order/.prettierrc`
   - `table-order/.gitignore`, `table-order/.env.example`
 
-- [ ] **Step 2**: 공유 타입 정의
+- [x] **Step 2**: 공유 타입 정의
   - `table-order/shared/types/index.ts` (도메인 엔티티 타입, API 요청/응답 타입, SSE 이벤트 타입)
 
 ### Phase 1: Unit 2-A — Shared Layer + Customer API
 
-- [ ] **Step 3**: 서버 패키지 설정
+- [x] **Step 3**: 서버 패키지 설정
   - `table-order/server/package.json` (의존성, scripts)
   - `table-order/server/tsconfig.json` (extends base)
   - `table-order/server/jest.config.ts`
 
-- [ ] **Step 4**: 데이터베이스 설정 + ORM 모델
+- [x] **Step 4**: 데이터베이스 설정 + ORM 모델
   - `table-order/server/src/shared/database.ts` (Sequelize 연결, 커넥션 풀)
   - `table-order/server/src/shared/models/index.ts` (모델 등록, 관계 설정)
   - `table-order/server/src/shared/models/Store.ts`
@@ -62,66 +62,66 @@
   - `table-order/server/src/shared/models/OrderHistory.ts`
   - 스토리: US-C01, US-C02, US-C04, US-C05, US-A01~A04 (전체 데이터 모델)
 
-- [ ] **Step 5**: 공유 유틸리티 + 에러 처리
+- [x] **Step 5**: 공유 유틸리티 + 에러 처리
   - `table-order/server/src/shared/utils/errors.ts` (에러 클래스 체계: ValidationError, AuthenticationError 등)
   - `table-order/server/src/shared/utils/logger.ts` (winston 설정)
   - `table-order/server/src/shared/utils/requestId.ts` (요청 ID 미들웨어)
 
-- [ ] **Step 6**: AuthService (인증 서비스)
+- [x] **Step 6**: AuthService (인증 서비스)
   - `table-order/server/src/shared/services/AuthService.ts`
     - tableLogin(), adminLogin(), verifyToken(), generateToken()
   - 스토리: US-C01 (테이블 로그인), US-A01 (관리자 로그인)
 
-- [ ] **Step 7**: AuthService 단위 테스트
+- [x] **Step 7**: AuthService 단위 테스트
   - `table-order/server/src/shared/services/__tests__/AuthService.test.ts`
   - PBT: JWT 토큰 생성/검증 Round-trip, bcrypt 해싱/검증
 
-- [ ] **Step 8**: OrderService (주문 서비스)
+- [x] **Step 8**: OrderService (주문 서비스)
   - `table-order/server/src/shared/services/OrderService.ts`
     - createOrder(), updateOrderStatus(), deleteOrder(), getActiveOrdersByStore(), getOrdersBySession()
   - 스토리: US-C04 (주문 생성), US-C05 (주문 조회), US-A02 (주문 모니터링)
 
-- [ ] **Step 9**: OrderService 단위 테스트
+- [x] **Step 9**: OrderService 단위 테스트
   - `table-order/server/src/shared/services/__tests__/OrderService.test.ts`
   - PBT: totalAmount 계산 Invariant, 주문 상태 전이 Idempotence
 
-- [ ] **Step 10**: TableService (테이블/세션 서비스)
+- [x] **Step 10**: TableService (테이블/세션 서비스)
   - `table-order/server/src/shared/services/TableService.ts`
     - setupTable(), completeTable(), getOrderHistory(), getTableSummary()
   - 스토리: US-A03 (테이블 관리)
 
-- [ ] **Step 11**: TableService 단위 테스트
+- [x] **Step 11**: TableService 단위 테스트
   - `table-order/server/src/shared/services/__tests__/TableService.test.ts`
   - PBT: Order→OrderHistory 변환 Round-trip
 
-- [ ] **Step 12**: MenuService (메뉴 서비스)
+- [x] **Step 12**: MenuService (메뉴 서비스)
   - `table-order/server/src/shared/services/MenuService.ts`
     - getMenusByStore(), createMenu(), updateMenu(), deleteMenu(), reorderMenus()
   - 스토리: US-C02 (메뉴 조회), US-A04 (메뉴 관리)
 
-- [ ] **Step 13**: MenuService 단위 테스트
+- [x] **Step 13**: MenuService 단위 테스트
   - `table-order/server/src/shared/services/__tests__/MenuService.test.ts`
   - PBT: sortOrder 재정렬 Invariant
 
-- [ ] **Step 14**: SSEManager (실시간 이벤트)
+- [x] **Step 14**: SSEManager (실시간 이벤트)
   - `table-order/server/src/shared/services/SSEManager.ts`
     - addClient(), removeClient(), broadcastToStore(), sendToTable()
     - 이벤트 버퍼링 (Last-Event-ID 지원)
   - 스토리: US-C05 (실시간 상태), US-A02 (실시간 모니터링)
 
-- [ ] **Step 15**: SSEManager 단위 테스트
+- [x] **Step 15**: SSEManager 단위 테스트
   - `table-order/server/src/shared/services/__tests__/SSEManager.test.ts`
   - PBT: addClient/removeClient Stateful 테스트
 
-- [ ] **Step 16**: FileService (이미지 업로드)
+- [x] **Step 16**: FileService (이미지 업로드)
   - `table-order/server/src/shared/services/FileService.ts`
     - uploadImage() (비동기 S3 업로드), deleteImage()
   - 스토리: US-A04 (메뉴 이미지)
 
-- [ ] **Step 17**: Customer API 미들웨어
+- [x] **Step 17**: Customer API 미들웨어
   - `table-order/server/src/customer-api/middleware/tableAuth.ts` (테이블 JWT 검증)
 
-- [ ] **Step 18**: Customer API 라우터
+- [x] **Step 18**: Customer API 라우터
   - `table-order/server/src/customer-api/routes/authRouter.ts` (POST /api/customer/auth/login)
   - `table-order/server/src/customer-api/routes/menuRouter.ts` (GET /api/customer/menus)
   - `table-order/server/src/customer-api/routes/orderRouter.ts` (POST/GET /api/customer/orders)
@@ -129,17 +129,17 @@
   - `table-order/server/src/customer-api/index.ts` (라우터 통합)
   - 스토리: US-C01, US-C02, US-C04, US-C05
 
-- [ ] **Step 19**: Customer API 라우터 단위 테스트
+- [x] **Step 19**: Customer API 라우터 단위 테스트
   - `table-order/server/src/customer-api/routes/__tests__/authRouter.test.ts`
   - `table-order/server/src/customer-api/routes/__tests__/orderRouter.test.ts`
 
 ### Phase 2: Unit 2-B — Admin API
 
-- [ ] **Step 20**: Admin API 미들웨어
+- [x] **Step 20**: Admin API 미들웨어
   - `table-order/server/src/admin-api/middleware/adminAuth.ts` (관리자 JWT 검증)
   - `table-order/server/src/admin-api/middleware/fileUpload.ts` (multer 설정)
 
-- [ ] **Step 21**: Admin API 라우터
+- [x] **Step 21**: Admin API 라우터
   - `table-order/server/src/admin-api/routes/authRouter.ts` (POST /api/admin/auth/login)
   - `table-order/server/src/admin-api/routes/orderRouter.ts` (GET/PATCH/DELETE /api/admin/orders)
   - `table-order/server/src/admin-api/routes/tableRouter.ts` (POST/GET /api/admin/tables)
@@ -148,18 +148,18 @@
   - `table-order/server/src/admin-api/index.ts` (라우터 통합)
   - 스토리: US-A01, US-A02, US-A03, US-A04
 
-- [ ] **Step 22**: Admin API 라우터 단위 테스트
+- [x] **Step 22**: Admin API 라우터 단위 테스트
   - `table-order/server/src/admin-api/routes/__tests__/orderRouter.test.ts`
   - `table-order/server/src/admin-api/routes/__tests__/menuRouter.test.ts`
   - PBT: Admin JWT 검증 Invariant, 메뉴 이미지 교체 Invariant
 
-- [ ] **Step 23**: Express 앱 통합 + 헬스체크
+- [x] **Step 23**: Express 앱 통합 + 헬스체크
   - `table-order/server/src/app.ts` (Express 앱 설정, 미들웨어, 라우터 마운트, 정적 파일 서빙)
   - `table-order/server/src/index.ts` (서버 시작, Graceful Shutdown)
   - swagger-jsdoc 설정 + /api-docs 엔드포인트
   - /health 헬스체크 엔드포인트
 
-- [ ] **Step 24**: 데이터베이스 마이그레이션 + Seed 데이터
+- [x] **Step 24**: 데이터베이스 마이그레이션 + Seed 데이터
   - `table-order/server/src/shared/database/migrations/` (Sequelize CLI 마이그레이션)
   - `table-order/server/src/shared/database/seeders/` (초기 매장, 관리자, 카테고리, 메뉴 데이터)
   - `.sequelizerc` (마이그레이션 경로 설정)
@@ -215,7 +215,7 @@
 
 ### Phase 4: 배포 산출물
 
-- [ ] **Step 32**: 배포 설정 파일
+- [x] **Step 32**: 배포 설정 파일
   - `table-order/ecosystem.config.js` (PM2 설정)
   - `table-order/server/src/shared/database/config.ts` (Sequelize CLI 설정)
   - `table-order/README.md` (프로젝트 설명, 설치/실행 가이드)
