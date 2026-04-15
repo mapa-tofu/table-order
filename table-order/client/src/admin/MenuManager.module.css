@@ -1,0 +1,24 @@
+.container { max-width: 800px; margin: 0 auto; padding: 16px; }
+.loading { text-align: center; padding: 40px; }
+.header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.header h1 { flex: 1; font-size: 24px; }
+.header button { background: none; border: none; font-size: 18px; }
+.addButton { background: #2563eb !important; color: white; padding: 8px 16px; border-radius: 8px; font-size: 14px !important; }
+.menuForm { display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #fff; border-radius: 12px; margin-bottom: 24px; }
+.menuForm input, .menuForm select { padding: 10px; border: 1px solid #ddd; border-radius: 8px; }
+.formActions { display: flex; gap: 8px; }
+.formActions button { flex: 1; padding: 10px; border: none; border-radius: 8px; font-weight: 600; }
+.formActions button:first-child { background: #2563eb; color: white; }
+.formActions button:last-child { background: #f3f4f6; }
+.error { color: #dc2626; font-size: 14px; }
+.categorySection { margin-bottom: 24px; }
+.categorySection h2 { font-size: 18px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #2563eb; }
+.menuList { display: flex; flex-direction: column; gap: 8px; }
+.menuItem { display: flex; align-items: center; gap: 12px; background: #fff; border-radius: 8px; padding: 12px; }
+.menuImage { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
+.menuInfo { flex: 1; display: flex; flex-direction: column; }
+.menuName { font-weight: 600; }
+.menuPrice { color: #2563eb; font-size: 14px; }
+.menuActions { display: flex; gap: 6px; }
+.menuActions button { padding: 6px 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff; font-size: 13px; }
+.deleteButton { color: #dc2626; border-color: #dc2626 !important; }

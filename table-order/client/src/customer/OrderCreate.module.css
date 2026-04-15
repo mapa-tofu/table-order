@@ -1,0 +1,10 @@
+.container { max-width: 600px; margin: 0 auto; padding: 16px; }
+.header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.header h1 { font-size: 20px; }
+.header button { background: none; border: none; font-size: 18px; }
+.itemList { list-style: none; padding: 0; }
+.item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee; }
+.total { display: flex; justify-content: space-between; padding: 16px 0; font-size: 20px; font-weight: 700; border-top: 2px solid #333; margin-top: 8px; }
+.error { color: #dc2626; text-align: center; margin: 12px 0; }
+.confirmButton { width: 100%; padding: 16px; background: #dc2626; color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: 700; margin-top: 24px; }
+.confirmButton:disabled { opacity: 0.6; }

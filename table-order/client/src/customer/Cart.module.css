@@ -1,0 +1,19 @@
+.container { max-width: 600px; margin: 0 auto; }
+.header { display: flex; align-items: center; gap: 12px; padding: 16px; background: #fff; position: sticky; top: 0; }
+.header h1 { flex: 1; font-size: 20px; }
+.header button { background: none; border: none; font-size: 18px; }
+.clearButton { color: #dc2626; font-size: 14px !important; }
+.empty { text-align: center; padding: 60px 20px; }
+.empty p { margin-bottom: 16px; color: #666; }
+.empty button { padding: 12px 24px; background: #2563eb; color: white; border: none; border-radius: 8px; }
+.itemList { list-style: none; padding: 0 16px; }
+.item { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid #eee; }
+.itemInfo { display: flex; flex-direction: column; gap: 4px; }
+.itemName { font-weight: 600; }
+.itemPrice { color: #2563eb; font-weight: 700; }
+.quantityControls { display: flex; align-items: center; gap: 12px; }
+.quantityControls button { width: 36px; height: 36px; border: 1px solid #ddd; border-radius: 50%; background: #fff; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+.removeButton { color: #dc2626; border-color: #dc2626 !important; }
+.footer { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 16px; border-top: 1px solid #eee; }
+.total { display: flex; justify-content: space-between; font-size: 18px; font-weight: 700; margin-bottom: 12px; }
+.orderButton { width: 100%; padding: 16px; background: #2563eb; color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: 700; }

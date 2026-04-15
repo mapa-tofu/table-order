@@ -1,0 +1,26 @@
+.container { max-width: 1000px; margin: 0 auto; padding: 16px; }
+.loading { text-align: center; padding: 40px; }
+.header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.header h1 { flex: 1; font-size: 24px; }
+.header button { background: none; border: none; font-size: 18px; }
+.addButton { background: #2563eb !important; color: white; padding: 8px 16px; border-radius: 8px; font-size: 14px !important; }
+.setupForm { display: flex; gap: 8px; margin-bottom: 24px; padding: 16px; background: #fff; border-radius: 12px; }
+.setupForm input { flex: 1; }
+.setupForm button { padding: 8px 16px; background: #16a34a; color: white; border: none; border-radius: 8px; }
+.error { color: #dc2626; font-size: 14px; }
+.tableGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.tableCard { background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.tableCard h3 { font-size: 18px; margin-bottom: 8px; }
+.sessionInfo { font-size: 14px; color: #2563eb; margin-bottom: 8px; }
+.inactive { color: #999; font-size: 14px; margin-bottom: 8px; }
+.actions { display: flex; gap: 6px; }
+.actions button { padding: 6px 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff; font-size: 13px; }
+.historyButton { padding: 6px 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff; font-size: 13px; }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.modalContent { background: #fff; border-radius: 16px; padding: 24px; max-width: 500px; width: 90%; max-height: 80vh; overflow-y: auto; }
+.modalHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.modalHeader button { background: none; border: none; font-size: 16px; }
+.empty { text-align: center; color: #666; padding: 24px; }
+.historyList { list-style: none; padding: 0; }
+.historyList li { padding: 12px 0; border-bottom: 1px solid #eee; }
+.historyTime { font-size: 12px; color: #666; margin-top: 4px; }

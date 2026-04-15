@@ -1,0 +1,19 @@
+.container { max-width: 600px; margin: 0 auto; padding-bottom: 80px; }
+.loading { text-align: center; padding: 40px; }
+.header { display: flex; justify-content: space-between; align-items: center; padding: 16px; position: sticky; top: 0; background: #fff; z-index: 10; }
+.header h1 { font-size: 20px; }
+.cartButton { background: none; border: none; font-size: 24px; position: relative; }
+.badge { position: absolute; top: -4px; right: -8px; background: #dc2626; color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; display: flex; align-items: center; justify-content: center; }
+.tabs { display: flex; gap: 8px; padding: 0 16px; overflow-x: auto; position: sticky; top: 56px; background: #fff; z-index: 9; padding-bottom: 8px; }
+.tab { padding: 8px 16px; border: 1px solid #ddd; border-radius: 20px; background: #fff; font-size: 14px; white-space: nowrap; }
+.activeTab { background: #2563eb; color: white; border-color: #2563eb; }
+.menuGrid { display: flex; flex-direction: column; gap: 12px; padding: 16px; }
+.menuCard { display: flex; align-items: center; gap: 12px; background: #fff; border-radius: 12px; padding: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.menuImage { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+.menuInfo { flex: 1; }
+.menuInfo h3 { font-size: 16px; margin-bottom: 4px; }
+.description { font-size: 13px; color: #666; margin-bottom: 4px; }
+.price { font-size: 16px; font-weight: 700; color: #2563eb; }
+.addButton { padding: 8px 16px; background: #2563eb; color: white; border: none; border-radius: 8px; font-weight: 600; }
+.bottomNav { position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: #fff; border-top: 1px solid #eee; }
+.bottomNav button { flex: 1; padding: 12px; border: none; background: none; font-size: 14px; }
