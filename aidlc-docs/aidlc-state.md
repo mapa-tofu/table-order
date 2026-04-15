@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-04-15T09:00:00Z
-- **Current Stage**: INCEPTION - Application Design (Complete)
+- **Current Stage**: CONSTRUCTION - Functional Design (All Units Complete)
 
 ## Workspace State
 - **Existing Code**: No
@@ -34,10 +34,13 @@
 - [x] User Stories (Completed)
 - [x] Workflow Planning (Completed)
 - [x] Application Design (Completed)
-- [ ] Units Generation — EXECUTE
+- [x] Units Generation (Completed)
 
 ### CONSTRUCTION PHASE
 - [ ] Functional Design — EXECUTE (per-unit)
+  - [x] Unit 2-A: Backend Shared & Customer API (Completed)
+  - [x] Unit 2-B: Backend Admin API (Completed)
+  - [x] Unit 1: Frontend (Completed)
 - [ ] NFR Requirements — EXECUTE (per-unit)
 - [ ] NFR Design — SKIP
 - [ ] Infrastructure Design — EXECUTE (per-unit)

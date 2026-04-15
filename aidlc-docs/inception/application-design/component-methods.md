@@ -39,7 +39,7 @@ reorderMenus(storeId: string, categoryId: string, menuIds: string[]): Promise<vo
 // 주문 생성
 createOrder(storeId: string, tableId: string, sessionId: string, items: OrderItemInput[]): Promise<Order>
 // 현재 세션 주문 조회 (고객용)
-getOrdersBySession(sessionId: string): Promise<Order[]>
+getOrdersBySession(sessionId: string, pagination?: { page: number; limit: number }): Promise<{ orders: Order[]; total: number }>
 // 매장 전체 활성 주문 조회 (관리자용)
 getActiveOrdersByStore(storeId: string): Promise<OrdersByTable[]>
 // 주문 상태 변경
